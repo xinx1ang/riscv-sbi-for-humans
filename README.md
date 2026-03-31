@@ -26,6 +26,10 @@ The SBI spec is precise, but it is not always the easiest document to learn from
 - 08. PMU
 - 09. Debug console and newer extensions
 - 10. Version differences and implementation notes
+- 07. System reset
+- 08. PMU
+- 09. Debug console and newer extensions
+- 10. Version differences and implementation notes
 
 ## Style
 
