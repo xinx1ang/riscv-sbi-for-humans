@@ -93,3 +93,13 @@ If you remember only one thing from this chapter, remember this:
 
 SBI portability is achieved not by assuming sameness,
 but by combining a stable abstraction with careful capability discovery.
+
+When comparing SBI behavior across boards or firmware versions, walk this list in order:
+
+1. detect the reported SBI spec version first
+2. probe the exact extension you plan to use instead of assuming it exists
+3. separate "extension missing" from "extension present but limited on this platform"
+4. check whether Linux, the hypervisor, or your firmware has a fallback path
+5. only then treat the behavior as a likely firmware bug or platform quirk
+
+This order helps avoid mislabeling portability differences as implementation defects.
